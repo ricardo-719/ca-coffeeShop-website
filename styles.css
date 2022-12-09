@@ -86,6 +86,7 @@ header a {
 
 .featuredLabel {
     margin-top: 69px;
+    margin-bottom: 10px;
     text-align: center;
 }
 
@@ -93,10 +94,12 @@ header a {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    margin: 10px;
 }
 
 .featuredImg {
     padding: 5px;
+    margin: 0px 6px;
     height: 200px;
     width: 300px;
 }

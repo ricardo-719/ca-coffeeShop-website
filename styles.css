@@ -2,33 +2,156 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+    color:seashell;
+    opacity: 0.9;
 }
 
 body {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+}
+
+h2 {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+h4 {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+p {
+    font-size: 22px;
 }
 
 header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position:fixed;
+    top: 0px;
+    width: 100%;
+    height: 69px;
+    font-size: 22px;
+    border-bottom: 1px solid seashell;
+    background-color: black;
+    z-index: 1;
+}
+
+header img {
+    height: 50px;
+    margin: 10px;
+}
+
+header a {
+    text-decoration: underline;
+    margin-right: 10px;
+}
+
+#hero {
+    position: relative;
+    top: 69px;
+    height: 700px;
+    width: 1200px;
+    background-image: url('https://content.codecademy.com/courses/freelance-1/unit-4/img-mission-background.jpg');
+    background-size: auto;
+    margin-bottom: 69px;
+}
+
+#hero .missionLabel {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    min-height: 100px;
+    background-color: black;
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#featured {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1000px;
+}
+
+.featuredLabel {
+    margin-top: 69px;
+    text-align: center;
+}
+
+.featuredProducts {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.featuredImg {
+    padding: 5px;
+    height: 200px;
+    width: 300px;
+}
+
+figcaption {
+    text-align: center;
+    padding: 5px;
+}
+
+#locations {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url('https://content.codecademy.com/courses/freelance-1/unit-4/img-locations-background.jpg');
+    background-size: cover;
+    background-position-y: -70px;
+    height: 500px;
+    width: 1200px;
+    margin-top: 69px;
+}
+
+.addresses {
+    display: flex;
+    justify-content: space-around;
+}
+
+.addresscard {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 300px;
+    height: 300px;
+    background-color: black;
+    opacity: 1;
+    margin: 15px 20px;
+    text-align: center;
+}
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    height: 200px;
     width: 100%;
 }
 
-.hero {
-    width: 100%;
-}
-
-.featured {
-    width: 100%;
-}
-
-.locations {
-    width: 100%;
-}
-
-.contact {
-    width: 100%;
+#contact h5 {
+    font-size: 22px;
 }
 
 footer {
+    margin-top: 20px;
+    padding-left: 25px;
+    height: 69px;
     width: 100%;
 }
